@@ -2,12 +2,12 @@ import "./App.css";
 
 function App() {
   // add event here
-  const handleClick = () => {
+  const handleMouseMove = () => {
     console.log("Button was clicked!");
   };
   return (
     <>
-      <button onClick={handleClick}>Add Animal</button>
+      <button onMouseMove={handleMouseMove}>Add Animal</button>
     </>
   );
 }
