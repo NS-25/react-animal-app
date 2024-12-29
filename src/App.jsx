@@ -1,9 +1,13 @@
 import "./App.css";
 
 function App() {
+  // add event here
+  const handleClick = () => {
+    console.log("Button was clicked!");
+  };
   return (
     <>
-      <div>Show animal list here!</div>
+      <button onClick={handleClick}>Add Animal</button>
     </>
   );
 }
