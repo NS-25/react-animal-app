@@ -1,13 +1,17 @@
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  // add state
+  const [count, setCount] = useState(0);
   // add event here
-  const handleMouseMove = () => {
-    console.log("Button was clicked!");
+  const handleClick = () => {
+    setCount(count + 1);
   };
   return (
     <>
-      <button onMouseMove={handleMouseMove}>Add Animal</button>
+      <button onClick={handleClick}>Add Animal</button>
+      <div>Number of animals: {count}</div>
     </>
   );
 }
