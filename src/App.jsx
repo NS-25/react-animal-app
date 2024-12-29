@@ -1,12 +1,9 @@
 import "./App.css";
 
 function App() {
-
   return (
     <>
-      <div>
-        <h1>Hello world</h1>
-      </div>
+      <div>Show animal list here!</div>
     </>
   );
 }
