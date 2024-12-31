@@ -15,6 +15,8 @@ function App() {
 
   const handleClick = () => {
     setAnimals([...animals, getRandomAnimal()]);
+    // above code is same like below one!!!
+    // setAnimals([...animals, getRandomAnimal() = "one random animal example "gator"]);
   };
 
   const renderedAnimals = animals.map((animal, index) => {
